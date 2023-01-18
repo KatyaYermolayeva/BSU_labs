@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Trigonometric calculator</title>
+    </head>
+    <body>
+    <p><h2>Trigonometric calculator:</h2>
+      <form action="calculator" method=POST>
+        <b>Function: 
+            <select name="function">
+            <option value="cos">cos</option>
+            <option value="sin">sin</option>
+            <option value="tg">tg</option>
+            <option value="ctg">ctg</option>
+            <option value="sec">sec</option>
+            <option value="cosec">cosec</option>
+          </select>
+          </b><br>
+        <b>Enter angle: <input type="text" name="angle" value="" autocomplete="off" required></b><br>
+        <b>Measure:</b><br> 
+           Radians <input type="radio" name="measure" value="radians" checked> 
+           Degrees <input type="radio" name="measure" value="degrees"> <br>
+        <b>Accuracy:</b><br>
+        Number of digits after decimal point: <input type="number" name="accuracy" min="0" max="16" required><br>
+           <input type="submit" value="Calculate"> <br>
+      </form>
+    </body>
+</html>  
